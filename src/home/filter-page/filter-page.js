@@ -32,7 +32,7 @@ class FilterPage extends React.Component {
         let colorCards = colorsArr?.map(color => {
             return (
                 <div className="card h-5" key={color.hex}>
-                    <div className="card text-white text-center p-3" style={{backgroundColor: `${color.hex}`}}>
+                    <div className="card text-white text-center p-3 mb-0" style={{backgroundColor: `${color.hex}`}}>
                         <p>{color.hex}</p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ class FilterPage extends React.Component {
                 </nav>
                 <div className="row text-center mt-5 mb-5">
                     <input className="form-control mr-sm-2 offset-3 col-6"
-                        type="search" placeholder="Search color" aria-label="Search"
+                        type="search" placeholder="Search colors by name" aria-label="Search"
                         onChange={this.searchColors}
                     />
                 </div>
